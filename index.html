@@ -1,33 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wikipedia-like Page</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Wikipedia</h1>
     </header>
+
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Random article</a></li>
-            <li><a href="#">About Wikipedia</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Retângulo</a></li>
+            <li><a href="#">Cilindro</a></li>
+            <li><a href="#">Cubo</a></li>
+            <li><a href="#">Paralelepípedo</a></li>
+            <li><a href="#">Trapézio</a></li>
+            <li><a href="#">Sobre</a></li>
         </ul>
     </nav>
+<script src="main.js"></script>
     <main>
         <article>
-            <h2>Article Title</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non risus eu purus tristique bibendum.</p>
-            <!-- More content goes here -->
+    <!-- Cone -->
+    <section>
+        <h2>Cone</h2>
+        <img src="https://lojaacal.vteximg.com.br/arquivos/ids/163739-1000-1000/cone-de-sinalizacao-polietieno-50cm-vonder-447942.jpg?v=637376959658070000" alt="Cone de Sinalização">
+       
+        <p>O Fascinante Mundo do Cone: Uma Viagem Geométrica
+
+            Imagine-se viajando pelo intrigante universo da geometria, onde formas simples ganham vida. Hoje, nossa jornada nos leva ao extraordinário cone, uma figura tridimensional que encanta pela sua elegância e versatilidade.</p>
+
+        <p>Como Calcular o Cone: Desvendando seus Segredos
+
+            Calcular a área de um cone é tão empolgante quanto desvendar um mistério. Para isso, utilizamos a fórmula A = πr² + πrℓ, onde "r" representa o raio da base e "ℓ" é a altura do cone. Já o volume, esse tesouro geométrico, é encontrado por V = (1/3)πr²ℓ. Uma verdadeira dança de números que revela os segredos dessa forma única.
+        </p>
+
+        <p>Uma Breve História do Cone: Do Antigo Egito à Modernidade
+
+            A história do cone é uma viagem no tempo. Desde os tempos do Antigo Egito, onde as pirâmides erguiam-se majestosas, até os avanços matemáticos de Arquimedes e as revoluções científicas da Renascença, o cone sempre desempenhou um papel fundamental na compreensão do espaço e da beleza matemática.
+            
+            Em resumo, o cone é mais do que uma simples figura geométrica; é uma peça chave na intricada tapeçaria do conhecimento matemático. Ao calcular suas dimensões e explorar sua história, descobrimos que, assim como o cone, o conhecimento matemático tem o poder de nos transportar para universos fascinantes e desconhecidos.
+        </p>
+
+        <p>Aplicações Práticas:
+            - A geometria do cone é essencial em campos como engenharia e arquitetura.
+            - Cones são encontrados em objetos do cotidiano, como cones de tráfego e cones de sorvete.
+        </p>
+
+        <section>
+    <label for="coneRaio">Raio da Base:</label>
+    <input type="number" id="coneRaio">
+    <label for="coneAltura">Altura do Cone:</label>
+    <input type="number" id="coneAltura">
+    <button onclick="calcularVolumeCone()">Calcular Volume</button>
+    <button onclick="calcularAreaCone()">Calcular Área</button>
+    <p id="coneResultado"></p>
+        </section>
+
+    </section>
+
+
+            <!-- Seção Cilindro -->
+            <section>
+                <h2>Cilindro</h2>
+                <img src="http://2.bp.blogspot.com/-K2D1_5K7y34/WM3JQ-jzUiI/AAAAAAAACGg/CeZ895fAcuIa_E6nUAk1-2CTWKBvb8eHwCK4B/s320/image-710078.png" alt="Imagem do Cilindro">
+                <!-- Conteúdo sobre o Cilindro -->
+                <p>Cilindro: A Elegância Matemática em Três Dimensões
+
+                    Adentre conosco o intrigante mundo do cilindro, uma figura geométrica que une simplicidade e beleza em sua forma tridimensional. Vamos desvendar seus segredos matemáticos e explorar a rica história que o acompanha.
+                    
+                    Como Calcular o Cilindro: Desbravando as Fórmulas
+                    
+                    Calcular a área e o volume de um cilindro é como desbloquear um enigma matemático. Para a área da superfície lateral, utilizamos a fórmula A = 2πrh, onde "r" representa o raio da base e "h" é a altura do cilindro. Já o volume, a verdadeira essência dessa figura, é dado por V = πr²h. Com essas fórmulas, desvendamos as dimensões ocultas do cilindro.
+                    
+                    
+                </p>
+ <!-- Cilindro -->
+ <section>
+    <h2>Calcular Volume e Área do Cilindro</h2>
+    <label for="raioBase">Raio da Base:</label>
+    <input type="number" id="raioBase">
+
+    <label for="alturaCilindro">Altura do Cilindro:</label>
+    <input type="number" id="alturaCilindro">
+
+    <button onclick="calcularVolumeAreaCilindro()">Calcular</button>
+
+    <p id="resultadoCilindro"></p>
+</section>
+
+            <!-- Seção Cubo -->
+            <section>
+                <h2>Cubo</h2>
+                <img src="https://midias.jornalcruzeiro.com.br/wp-content/uploads/2019/12/O-cubo-qie-desafia-1.jpg" alt="Imagem do Cubo">
+                <!-- Conteúdo sobre o Cubo -->
+                <p>O Cubo: Sólido, Simétrico e Matematicamente Fascinante
+
+                    Adentremos o intrigante universo do cubo, uma figura geométrica que transcende sua simplicidade visual, revelando profundidades matemáticas e uma história rica que perdura ao longo dos séculos.
+                    
+                    Como Calcular o Cubo: Desvendando sua Geometria Exata
+                    
+                    Calcular as propriedades do cubo é uma jornada pela precisão matemática. Sua área superficial, uma composição de seis faces quadradas idênticas, é calculada por A = 6s², onde "s" representa o comprimento da aresta. Já o volume, medida de sua substância tridimensional, é encontrado por V = s³. A simplicidade dessas fórmulas destaca a elegância intrínseca do cubo.
+                    
+                    Uma Breve História do Cubo: Dos Filósofos Gregos à Modernidade Matemática
+                    
+                    A história do cubo remonta aos pensadores gregos antigos, que exploraram suas propriedades e contribuíram para a geometria como a conhecemos. No Renascimento, a redescoberta e ampliação desses conceitos por matemáticos como Leonardo da Vinci e Luca Pacioli consolidaram a importância do cubo no panorama matemático. Desde então, ele se tornou uma peça fundamental em diversas disciplinas, da arquitetura à física, refletindo a simplicidade e a beleza presentes na natureza matemática.
+                </p>
+   
+            </section>
+   
+            <!-- Cubo -->
+    <h2>Cubo</h2>
+    <label for="cuboLado">Lado do Cubo:</label>
+    <input type="number" id="cuboLado">
+    <button onclick="calcularVolumeCubo()">Calcular Volume</button>
+    <button onclick="calcularAreaCubo()">Calcular Área</button>
+    <p id="cuboResultado"></p>
+
+            <!-- Seção Paralelepípedo -->
+            <section>
+                <h2>Paralelepípedo</h2>
+                <img src="http://2.bp.blogspot.com/-NMr2nZCPHjU/TiCVT8-Z1zI/AAAAAAAAAHU/XZD4KTZRF-M/s1600/especialidades_nestle.jpg" alt="Imagem do Paralelepípedo">
+                <!-- Conteúdo sobre o Paralelepípedo -->
+                <p>Paralelepípedo: As Faces da Geometria em Três Dimensões
+
+                    Vamos explorar as facetas do paralelepípedo, uma figura geométrica tridimensional que, além de sua presença marcante na matemática, guarda consigo uma história fascinante.
+                    
+                    Como Calcular o Paralelepípedo: Desvendando suas Medidas Precisas
+                    
+                    Calcular as propriedades de um paralelepípedo é um mergulho na matemática sólida. Para encontrar a área da superfície, utilizamos a fórmula A = 2(lw + lh + wh), onde "l," "w" e "h" representam as dimensões do paralelepípedo. Já o volume, a medida de sua substância tridimensional, é dado por V = lwh. Essas fórmulas revelam as características matemáticas que tornam o paralelepípedo uma figura tão única.
+                    
+                    Uma Breve História do Paralelepípedo: Da Antiguidade à Modernidade Matemática
+                    
+                    A história do paralelepípedo remonta às civilizações antigas, onde conceitos rudimentares dessa forma apareciam em construções arquitetônicas. No entanto, foi com o desenvolvimento da geometria como disciplina matemática que o paralelepípedo ganhou destaque. Ao longo dos séculos, matemáticos notáveis como Euclides e Arquimedes contribuíram para o entendimento dessa figura, solidificando seu lugar na matemática.
+                    
+                    
+                </p>
+            </section>
+
+            <!-- Seção Paralelepípedo (com interação do usuário) -->
+            <section>
+                <h2>Paralelepípedo</h2>
+                <label for="paralelepipedoComprimento">Comprimento:</label>
+                <input type="number" id="paralelepipedoComprimento">
+                <label for="paralelepipedoLargura">Largura:</label>
+                <input type="number" id="paralelepipedoLargura">
+                <label for="paralelepipedoAltura">Altura:</label>
+                <input type="number" id="paralelepipedoAltura">
+                <button onclick="calcularVolumeParalelepipedo()">Calcular Volume</button>
+                <button onclick="calcularAreaParalelepipedo()">Calcular Área</button>
+                <p id="paralelepipedoResultado"></p>
+            </section>
         </article>
     </main>
+
     <footer>
         &copy; 2023 Wikipedia
     </footer>
-</body>
-</html>
 
+    <script src="main.js"></script>
+
+      <!-- Trapézio -->
+    <section>
+        <h2>Trapézio</h2>
+        <img src="https://ultramaquinas.fbitsstatic.net/img/p/estilete-trapezoidal-retratil-bi-metal-2082101-irwin-71684/258503.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Estilete Trapezoidal">
+       
+        <p>Trapézio: Entre Linhas e Áreas, Uma Jornada Matemática
+
+            Adentremos o universo do trapézio, uma figura geométrica que, com suas linhas distintas, nos leva a explorar não apenas suas propriedades matemáticas, mas também sua história cativante.
+            
+            Como Calcular o Trapézio: Desvendando Suas Dimensões
+            
+            Calcular as propriedades de um trapézio é como desvendar um quebra-cabeça matemático. A área desse polígono pode ser encontrada pela fórmula A = ((b1 + b2) * h) / 2, onde "b1" e "b2" representam os comprimentos das bases paralelas e "h" é a altura do trapézio. Essa fórmula revela a arte de calcular a área entre suas linhas distintas.
+            
+            Uma Breve História do Trapézio: Da Antiguidade à Abstração Matemática
+            
+            A história do trapézio remonta às civilizações antigas, onde formas semelhantes eram utilizadas em construções arquitetônicas. No entanto, sua formalização matemática ocorreu com o desenvolvimento da geometria grega. Matemáticos como Euclides exploraram propriedades de figuras trapezoidais, contribuindo para a compreensão que temos hoje. Ao longo dos séculos, o trapézio evoluiu de um elemento prático a um conceito abstrato, incorporado nas teorias matemáticas modernas.</p>
+
+        <p>Propriedades e Cálculos:
+            - Calcular a área de um trapézio envolve somar o comprimento das bases e multiplicar pela altura, dividindo por 2: \(A = \frac{(b_1 + b_2) \times h}{2}\).
+            - O perímetro de um trapézio é a soma dos comprimentos de todos os seus lados.
+        </p>
+
+        <p>Curiosidades:
+            - O trapézio é frequentemente associado a conceitos de geometria analítica e álgebra.
+            - Na arquitetura, o formato trapezoidal pode ser encontrado em várias estruturas, desde edifícios até pontes.
+        </p>
+
+        <p>Aplicações Práticas:
+            - O trapézio é uma figura chave em cálculos de área em campos como construção civil, design gráfico e engenharia.
+            - Seu estudo é essencial em matemática, proporcionando uma compreensão sólida de propriedades geométricas.
+        </p>
+
+        <section>
+            <h2>Calcular Área e Perímetro do Trapézio</h2>
+            <label for="baseMaior">Base Maior:</label>
+            <input type="number" id="baseMaior">
+   
+            <label for="baseMenor">Base Menor:</label>
+            <input type="number" id="baseMenor">
+   
+            <label for="altura">Altura:</label>
+            <input type="number" id="altura">
+   
+            <label for="lado1">Lado 1:</label>
+            <input type="number" id="lado1">
+   
+            <label for="lado2">Lado 2:</label>
+            <input type="number" id="lado2">
+   
+            <button onclick="calcularAreaPerimetro()">Calcular</button>
+   
+            <p id="resultado"></p>
+        </section>
+
+    </section>
+
+    <h1>Calculadora de Consumo de Energia Elétrica</h1>
+    <form>
+        <label>Potência (W): <input type="number" id="potencia"></label><br>
+        <label>Tempo de uso (horas por dia): <input type="number" id="tempo"></label><br>
+        <label>Período de uso (dias por mês): <input type="number" id="periodo"></label><br>
+        <label>Taxa de consumo (R$/kWh): <input type="number" id="taxa"></label><br>
+        <button type="button" onclick="calcularConsumo()">Calcular</button>
+    </form>
+        <div id="resultadoF"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
